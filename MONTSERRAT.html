@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>STIGER-Montserrat</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        @import {
+            font-family: Montserrat, sans-serif;
+            src: url(extrabold_montserrat.otf);
+        }
+        
+        .article-header {
+            font-style: extrabold_montserrat;
+            font-size: larger;
+            font-weight: 500;
+            letter-spacing: 3em;
+            position: relative;
+        }
+        
+        .articleh2 {
+            font-style: medium;
+            font-size: 60px;
+            font-weight: 300;
+            letter-spacing: 3em;
+            position: relative;
+        }
+        
+        .emboss-txt {
+            position: relative;
+            font-size: 180px;
+            font-family: montserrat;
+            letter-spacing: 5px;
+            color: rgb(231, 109, 144);
+            text-shadow: /*3d layers*/
+            0px 0px 1px rgba(175, 175, 175), 0px 1px 1px rgba(175, 175, 175), 0px 2px 1px rgba(175, 175, 175), 1px 1px 1px rgba(175, 175, 175), 1px 2px 1px rgba(175, 175, 175), 1px 3px 1px rgba(175, 175, 175), 2px 2px 1px rgba(175, 175, 175), 2px 3px 1px rgba(175, 175, 175), 2px 4px 1px rgba(175, 175, 175), 3px 3px 1px rgba(175, 175, 175), 3px 2px 1px rgba(175, 175, 175), 3px 4px 1px rgba(175, 175, 175);
+            ...
+            /*long soft bottom*/
+            1px 10px 30px rgba(0, 0, 0, 0.8),
+            1px 10px 70px rgba(0, 0, 0, 0.8),
+            /*short soft bottom*/
+            0px 5px 5px rgba(0, 0, 0, 0.8),
+            /*left shadow*/
+            -5px 5px 20px rgba(0, 0, 0, 0.8),
+            /*right shadow*/
+            5px 5px 20px rgba(0, 0, 0, 0.8)
+            /*white light*/
+            1px 1px 120px rgba(255, 255, 255, 0.5);
+        }
+        
+        .emboss-txt::after {
+            content: "DEMOGRAPHIC";
+            font-size: 180px;
+            letter-spacing: 4px;
+            font-family: montserrat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-shadow: 0px 0px 100px rgba(12, 124, 199, 0.5, );
+            animation: cycle 10s linear infinite;
+        }
+        
+        @keyframes cycle {
+            0% {
+                text-shadow: 0px 0px 100px rgba(11, 199, 199, 0.753);
+            }
+            20% {
+                text-shadow: 0px 0px 100px rgba(168, 11, 199, 0.5, );
+            }
+            40% {
+                text-shadow: 0px 0px 100px rgba(233, 133, 20, 0.808);
+            }
+            60% {
+                text-shadow: 0px 0px 100px rgba(12, 124, 199, 0.5, );
+            }
+            80% {
+                text-shadow: 0px 0px 100px rgba(199, 96, 11, 0.5, );
+            }
+        }
+        /* Container for flexboxes */
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* Create four equal columns */
+        
+        .column {
+            flex: 25%;
+            padding: 20px;
+        }
+        
+        .id-h1 {
+            font-size: 80px;
+            font-family: 'Montserrat';
+            color: rgb(22, 22, 199);
+            font-weight: bold;
+            font-variant: large;
+        }
+        
+        .id,
+        header {
+            font-weight: 600px;
+            font-size: 75px;
+            font-variant-alternates: historical-forms;
+            color: rgb(6, 6, 82);
+            font-style: bold;
+            letter-spacing: 13px;
+        }
+        
+        .id-h3 {
+            font-style: italic;
+            font-size: 1.5em;
+            font-weight: normal;
+            letter-spacing: 3em;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-size: 40px;
+            font-style: medium;
+            font-weight: 300;
+            letter-spacing: 9px;
+            color: rgb(6, 6, 82);
+        }
+        
+        p {
+            font-size: 30px;
+            font-style: italic;
+            font-weight: 400px;
+            letter-spacing: 4px;
+        }
+        
+        body {
+            font-family: "Montserrat", sans-serif;
+        }
+        
+        .display h3 {
+            font-size: 1.5em;
+            font-weight: 150px;
+            color: rgba(0, 128, 0, 0.582);
+            position: relative;
+        }
+        
+        .display h2 {
+            font-style: regular;
+            font-size: 2em;
+            font-weight: 550px;
+            color: rgba(128, 0, 28, 0.582);
+            position: relative;
+        }
+        
+        .display h4 {
+            font-style: italic;
+            font-size: 2.5em font-weight: 200px;
+            color: rgba(224, 108, 13, 0.582);
+            position: relative;
+        }
+        
+        .display h5 {
+            font-style: light;
+            font-size: 1.5em;
+            font-weight: 550px;
+            color: rgba(98, 0, 128, 0.911);
+            position: relative;
+        }
+        /* On screens that are 992px wide or less, go from four columns to two columns */
+        
+        @media screen and (max-width: 992px) {
+            .column {
+                flex: 50%;
+            }
+        }
+        /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 600px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+        
+        @media screen and (min-width: 600px) {
+            div.example {
+                font-size: 80px;
+            }
+            div.display {
+                font-size: 80px;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            div.example {
+                font-size: 30px;
+            }
+            div.display {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article class="montserrat"></article>
+    <header><b>MONTSERRAT</b></header>
+    <h2>Old posters and signs in the traditional Montserrat neighborhood of Buenos Aires inspired Julieta Ulanovsky to design this</h2>
+    <p class="montserrat-italic">Typeface and rescue the beauty of urban typography that emerged in the first half of the twentieth century.</p>
+    <p class="montserrat-italic">As urban development changes that place, it will never return to its original form and loses forever the designs that are so special and unique. The letters that inspired this project have work, dedication, care, color, contrast, light and life, and
+        night! These are the types that make the city look so beautiful.</p>
+    <p class="montserrat-italic">The Montserrat Project began with the idea to rescue what is in Montserrat and set it free under a libre license, the SIL Open Font License.</p>
+
+    </article>
+
+
+    <div class="row ">
+        <div class="column " style="background-color: #02B2B4; ">
+            <h1><b>A-Z</b></h1>
+            <p>ABCDEFGH</p>
+            <p>IJKLMNOP</p>
+            <p>QRSTUVWXYZ</p>
+        </div>
+
+        <div class="column " style="background-color:#D9C0DD ">
+            <h2><b>0-9</b></h2>
+            <p>012345</p>
+            <p>6789</p>
+        </div>
+
+        <div class="column " style="background-color:#F4C80F; ">
+            <h3><b>a-z</b></h3>
+            <p>abcdefgh</p>
+            <p>ijklmnop</p>
+            <p>qrstuvwxyz</p>
+        </div>
+
+        <div class="column " style="background-color:#78AECB; ">
+            <h4><b>Character</b></h4>
+            <p>?*&%432!</p>
+        </div>
+    </div>
+
+    <div class="display">
+        <div class="emboss-txt">DEMOGRAPHIC</div>
+        <h2>stenographic</h2>
+        <h3>OutSparking</h3>
+        <h4>flexographic</h4>
+        <h5>FRANCOPHILES</h5>
+    </div>
+
+    <div class="id ">
+        <header>ADES KITES</header>
+        <h4>Body Copy</h4>
+        <h3>Fly To A Thousand Different Lands With An ADES KITE In Your Hands</h3>
+    </div>
+
+</body>
+
+</html>
